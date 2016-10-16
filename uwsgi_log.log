@@ -1,0 +1,265 @@
+*** Starting uWSGI 2.0.11.2 (64bit) on [Tue Oct 11 19:24:12 2016] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.1.76) on 04 November 2015 01:44:39
+os: Darwin-16.0.0 Darwin Kernel Version 16.0.0: Mon Aug 29 17:56:20 PDT 2016; root:xnu-3789.1.32~3/RELEASE_X86_64
+nodename: MacBook-Pro-4.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/LumiaXu/PycharmProjects/blog
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 4864
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8077 fd 3
+Python version: 2.7.10 (default, Jul 30 2016, 18:31:42)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)]
+Python main interpreter initialized at 0x7f9ea4e00900
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166080 bytes (162 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9ea4e00900 pid: 84074 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 84074, cores: 2)
+spawned uWSGI worker 2 (pid: 84083, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84083|app: 0|req: 1/1] 127.0.0.1 () {40 vars in 776 bytes} [Wed Oct 12 08:48:44 2016] GET / => generated 0 bytes in 46 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84083|app: 0|req: 2/2] 127.0.0.1 () {40 vars in 730 bytes} [Wed Oct 12 08:48:44 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84083|app: 0|req: 3/3] 127.0.0.1 () {42 vars in 807 bytes} [Wed Oct 12 08:50:07 2016] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84074|app: 0|req: 1/4] 127.0.0.1 () {44 vars in 783 bytes} [Wed Oct 12 08:50:07 2016] GET /favicon.ico => generated 0 bytes in 7 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84083|app: 0|req: 4/5] 127.0.0.1 () {42 vars in 807 bytes} [Wed Oct 12 08:50:09 2016] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 84083|app: 0|req: 5/6] 127.0.0.1 () {44 vars in 783 bytes} [Wed Oct 12 08:50:09 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+*** Starting uWSGI 2.0.11.2 (64bit) on [Wed Oct 12 17:25:35 2016] ***
+compiled with version: 4.2.1 Compatible Apple LLVM 7.0.0 (clang-700.1.76) on 04 November 2015 01:44:39
+os: Darwin-16.0.0 Darwin Kernel Version 16.0.0: Mon Aug 29 17:56:20 PDT 2016; root:xnu-3789.1.32~3/RELEASE_X86_64
+nodename: MacBook-Pro-4.local
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /Users/LumiaXu/PycharmProjects/blog
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 709
+your memory page size is 4096 bytes
+detected max file descriptor number: 4864
+lock engine: OSX spinlocks
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8077 fd 3
+Python version: 2.7.10 (default, Jul 30 2016, 18:31:42)  [GCC 4.2.1 Compatible Apple LLVM 8.0.0 (clang-800.0.34)]
+Python main interpreter initialized at 0x7f9107f07230
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166080 bytes (162 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7f9107f07230 pid: 87279 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 87279, cores: 2)
+spawned uWSGI worker 2 (pid: 87288, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 1/1] 113.54.217.225 () {38 vars in 699 bytes} [Wed Oct 12 17:32:49 2016] GET / => generated 0 bytes in 14 msecs (HTTP/1.1 500) 0 headers in 0 bytes (1 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 2/2] 113.54.217.225 () {38 vars in 653 bytes} [Wed Oct 12 17:32:49 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 3/3] 113.54.217.225 () {38 vars in 699 bytes} [Wed Oct 12 17:33:19 2016] GET / => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 4/4] 113.54.217.225 () {38 vars in 653 bytes} [Wed Oct 12 17:33:19 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (1 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 5/5] 113.54.217.225 () {38 vars in 699 bytes} [Wed Oct 12 17:38:44 2016] GET / => generated 0 bytes in 2 msecs (HTTP/1.1 500) 0 headers in 0 bytes (1 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 6/6] 113.54.217.225 () {38 vars in 653 bytes} [Wed Oct 12 17:38:45 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87279|app: 0|req: 1/7] 127.0.0.1 () {38 vars in 691 bytes} [Thu Oct 13 16:50:49 2016] GET / => generated 0 bytes in 83 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 7/8] 127.0.0.1 () {38 vars in 643 bytes} [Thu Oct 13 16:50:50 2016] GET /favicon.ico => generated 0 bytes in 13 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 8/9] 127.0.0.1 () {40 vars in 771 bytes} [Thu Oct 13 16:51:03 2016] GET / => generated 0 bytes in 6 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/wsgi.py", line 168, in __call__
+    self.load_middleware()
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/core/handlers/base.py", line 44, in load_middleware
+    mw_class = import_string(middleware_path)
+  File "/Library/Python/2.7/site-packages/Django-1.7.1-py2.7.egg/django/utils/module_loading.py", line 26, in import_string
+    module = import_module(module_path)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named security
+[pid: 87288|app: 0|req: 9/10] 127.0.0.1 () {40 vars in 725 bytes} [Thu Oct 13 16:51:03 2016] GET /favicon.ico => generated 0 bytes in 0 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 1)

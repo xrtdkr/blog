@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+<head>
+    <title>LumiaXu's blog</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="lumiaxu"/>
+    <meta name="keywords" content="lumiaxu"/>
+    <!--[if lte IE 8]><script src="../static/js/html5shiv.js"></script><![endif]-->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/skel.min.js"></script>
+    <script src="/static/js/skel-layers.min.js"></script>
+    <script src="/static/js/init.js"></script>
+    <noscript>
+        <link rel="stylesheet" href="/static/css/skel.css"/>
+        <link rel="stylesheet" href="/static/css/style.css"/>
+        <link rel="stylesheet" href="/static/css/style-xlarge.css"/>
+    </noscript>
+    <script>function crystal(a) {
+        a.style.opacity = "1.0"
+    }
+    function antiCrystal(a) {
+        a.style.opacity = "0.6"
+    }</script>
+</head>
+<body class="landing">
+
+<!-- Header -->
+<header id="header" class="alt">
+    <h1><strong><a href="/index/">LumiaXu</a></strong>'s blog</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="/index/">Home</a></li>
+            <li><a href="/category/">Category</a></li>
+            <li><a href="/articles/">Articles</a></li>
+            <li><a href="/about_me/">About Me</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Banner -->
+<section id="banner">
+    <div>
+        <img src="../static/images/pd.png" alt="本来应该有个图的..." style="width: 120px; height: 120px">
+    </div>
+    <h2>LumiaXu</h2>
+    <p><br/> 卓然天成 为你而生</p>
+</section>
+
+{% for article in article_list_cut %}
+    <section id="banner_element">
+        <div style="padding-right: 20%; padding-left: 20%; opacity: 1">
+            <div style="text-align: left">
+                <button class="button special style2 small"
+                        style="background-color: deepskyblue;">{{ article.upload_time|date }}</button>
+            </div>
+            <br>
+            <div class="container 75%">
+
+                <div class="row 200%">
+                    <div class="6u 12u$(medium)">
+                        <header class="major">
+                            <a href="/articles/{{ article.title }}/">
+                                <h2 style="color: #aaaaaa">{{ article.title }}</h2>
+                            </a>
+                            <!--标题-->
+                            <p style="color: #aaaaaa">{{ article.subtitle }}</p>
+                            <!--副标题-->
+                        </header>
+                    </div>
+                    <div class="6u$ 12u$(medium)">
+                        <p style="color: #aaaaaa">{{ article.selection }}</p>
+                    </div>
+                    <a href="/articles/{{ article.title }}/" style="color: #7CA0C7; text-decoration: none"><p>更多</p></a>
+                </div>
+                <div style="text-align: left">
+                    <button class="button special style2 small"
+                            style="background-color: green">{{ article.category }}</button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endfor %}
+
+<!-- 第一版留言:这里的selection太不智能了要手动传上去,有点low所以下一版要进行改进 -->
+
+<!-- Three -->
+<section id="banner_element_4" class="wrapper style1">
+    <div class="container">
+        <header class="major special">
+            <h2 style="color: #aaaaaa">要不 随意看看</h2>
+            <p>从这里,蹒跚前行</p>
+        </header>
+        <div class="feature-grid">
+            <div class="feature">
+                <div class="image rounded"><a href="/category/python/"><img src="../static/images/pic04.jpg"
+                                                                            alt=""/></a></div>
+                <div class="content">
+                    <header>
+                        <h4>Python</h4>
+                        <p>Explicit is better than implicit.</p>
+                    </header>
+                    <p>明言胜于暗示。</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image rounded"><a href="/category/django/"><img src="../static/images/pic05.jpg"
+                                                                            alt=""/></a></div>
+                <div class="content">
+                    <header>
+                        <h4>django</h4>
+                        <p>The most popular python web frame </p>
+                    </header>
+                    <p>最流行的Python Web框架,<br>比更流行还流行。</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image rounded"><a href="/category/frontend/"><img src="../static/images/pic06.jpg" alt=""/></a>
+                </div>
+                <div class="content">
+                    <header>
+                        <h4>Frontend</h4>
+                        <p>The front make every thing possible</p>
+                    </header>
+                    <p>脸决定一切。</p>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="image rounded"><a href="/category/lifetime/"><img src="../static/images/pic07.jpg" alt=""/></a>
+                </div>
+                <div class="content">
+                    <header>
+                        <h4>lifetime</h4>
+                        <p>for a lifetime of progress</p>
+                    </header>
+                    <p>为你,千千万万遍。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Four -->
+<section id="four" class="wrapper style3 special">
+    <div class="container">
+        <header class="major">
+            <h2>Touch Me</h2>
+            <p>联系,联了又联</p>
+        </header>
+        <ul class="actions">
+            <li><a href="#" class="button special big" style="background-color: deepskyblue">Get in touch</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-facebook"></a></li>
+            <li><a href="#" class="icon fa-twitter"></a></li>
+            <li><a href="#" class="icon fa-instagram"></a></li>
+        </ul>
+        <ul class="copyright">
+            <li>&copy; LumiaXu</li>
+            <li>Thanks: <a href="http://templated.co">Templated</a></li>
+            <li>西元2016</li>
+        </ul>
+    </div>
+</footer>
+
+
+</body>
+</html>
