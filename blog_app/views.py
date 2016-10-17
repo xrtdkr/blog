@@ -10,7 +10,10 @@ from django.db.models import Q
 
 
 def index(request):
-    article_list = Article.objects.all()
+    article_list = Article.objects.all().order_by('-upload_time')
+    print '*************look here******************'
+    print article_list
+    print '****************************************'
     article_list_cut = article_list[0:3]
     return render_to_response('index.html', {'article_list_cut': article_list_cut,
                                              })
