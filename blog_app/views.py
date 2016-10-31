@@ -50,11 +50,20 @@ def article(request, dynamic_article_url=None):
         return render_to_response('404.html')   # 这里在后期可以自己返回404页面
 
 
+
 def about_me(request):
     return render_to_response('about_me.html')
 
 
 def four_zero_four(request):
     return render_to_response('404.html')
+
+
+def comment(request):
+    pass
+
+
+
+
 
 # Create your views here.
